@@ -1,0 +1,153 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Page2" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="true" title="WatSapX Car Insurance" showFooter="false" showNavButton="true" enableScrolling="false" navButtonPress="_onPageNavButtonPress">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="1077px" top="4px">
+                        <layout:control>
+                            <SegmentedButton width="auto" enabled="true" visible="true">
+                                <items>
+                                    <SegmentedButtonItem icon="sap-icon://employee" text="Peter Wyss" width="auto" enabled="true"/>
+                                    <SegmentedButtonItem icon="sap-icon://cart" text="" width="auto" enabled="true"/>
+                                </items>
+                            </SegmentedButton>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="86px" top="696px">
+                        <layout:control>
+                            <SlideTile displayTime="5000" transitionTime="500">
+                                <tiles>
+                                    <GenericTile header="Premium Package" subheader="" frameType="TwoByOne" class="sapUiTinyMargin">
+                                        <tileContent>
+                                            <TileContent footer="Chat to know more..." unit="">
+                                                <content>
+                                                    <NewsContent contentText="Preferred for Off-road SUVs" subheader="Bought by 100+ people in the last 30 days"/>
+                                                </content>
+                                            </TileContent>
+                                        </tileContent>
+                                    </GenericTile>
+                                </tiles>
+                            </SlideTile>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="7px" top="22px">
+                        <layout:control>
+                            <form:Form width="100%" editable="true" visible="true">
+                                <form:title>
+                                    <core:Title text="Get Quote" level="H1" icon="sap-icon://insurance-car" class="sapUiLargeMargin"/>
+                                </form:title>
+                                <form:formContainers>
+                                    <form:FormContainer visible="true">
+                                        <form:formElements>
+                                            <form:FormElement visible="true">
+                                                <form:label>
+                                                    <Label text="Registration Number" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </form:label>
+                                                <form:fields>
+                                                    <Input value="GJ01WX3367" placeholder="eg: GJ01WL2345" type="Text" description="" showValueHelp="false" enabled="false" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                </form:fields>
+                                            </form:FormElement>
+                                            <form:FormElement visible="true">
+                                                <form:label>
+                                                    <Label text="Car Make" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </form:label>
+                                                <form:fields>
+                                                    <Input value="HONDA ELEVATE" type="Text" showValueHelp="false" enabled="false" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                </form:fields>
+                                            </form:FormElement>
+                                            <form:FormElement visible="true">
+                                                <form:label>
+                                                    <Label text="Date of Registration" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </form:label>
+                                                <form:fields>
+                                                    <DatePicker value="20230223" width="auto" displayFormat="medium" required="false" valueStateText="Invalid entry" enabled="false" visible="true" valueFormat="yyyyMMdd"/>
+                                                </form:fields>
+                                            </form:FormElement>
+                                            <form:FormElement visible="true">
+                                                <form:label>
+                                                    <Label text="Body Type" design="Bold" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                                </form:label>
+                                                <form:fields>
+                                                    <Input value="SUV" type="Text" showValueHelp="false" enabled="false" visible="true" width="auto" valueHelpOnly="false" required="false" valueStateText="Invalid entry" maxLength="0"/>
+                                                </form:fields>
+                                            </form:FormElement>
+                                        </form:formElements>
+                                        <form:title/>
+                                    </form:FormContainer>
+                                </form:formContainers>
+                                <form:layout>
+                                    <form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+                                </form:layout>
+                            </form:Form>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="549px" top="319px">
+                        <layout:control>
+                            <Button text="Chat to know more..." type="Accept" icon="sap-icon://message-popup" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="86px" top="460px">
+                        <layout:control>
+                            <SlideTile displayTime="5000" transitionTime="500">
+                                <tiles>
+                                    <GenericTile header="Basic Package" subheader="" frameType="TwoByOne" class="sapUiTinyMargin">
+                                        <tileContent>
+                                            <TileContent footer="Chat to know more..." unit="">
+                                                <content>
+                                                    <NewsContent contentText="Preferred for Hatchbacks" subheader="Bought by 200+ people in the last 30 days"/>
+                                                </content>
+                                            </TileContent>
+                                        </tileContent>
+                                    </GenericTile>
+                                </tiles>
+                            </SlideTile>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="559px" top="697px">
+                        <layout:control>
+                            <SlideTile displayTime="5000" transitionTime="500">
+                                <tiles>
+                                    <GenericTile header="Full Package" subheader="" frameType="TwoByOne" class="sapUiTinyMargin">
+                                        <tileContent>
+                                            <TileContent footer="Chat to know more..." unit="">
+                                                <content>
+                                                    <NewsContent contentText="Preferred for luxury sedans" subheader="Bought by 30+ people in the last 30 days"/>
+                                                </content>
+                                            </TileContent>
+                                        </tileContent>
+                                    </GenericTile>
+                                </tiles>
+                            </SlideTile>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="554px" top="462px">
+                        <layout:control>
+                            <SlideTile displayTime="5000" transitionTime="500">
+                                <tiles>
+                                    <GenericTile header="Plus Package" subheader="" frameType="TwoByOne" class="sapUiTinyMargin">
+                                        <tileContent>
+                                            <TileContent footer="Chat to know more..." unit="">
+                                                <content>
+                                                    <NewsContent contentText="Preferred for Compact SUVs" subheader="Bought by 100+ people in the last 30 days"/>
+                                                </content>
+                                            </TileContent>
+                                        </tileContent>
+                                    </GenericTile>
+                                </tiles>
+                            </SlideTile>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="389px" top="408px">
+                        <layout:control>
+                            <Title text="Car Insurance Plans" titleStyle="H1" width="auto" textAlign="Center" visible="true" wrapping="false"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer/>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
